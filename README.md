@@ -8,36 +8,34 @@ HTML5, CSS, JavaScript, NodeJS, Express, Mongo, Mongoose.
 Created on linux (Ubuntu 20.04) platform, Visual Studio Code.
 
 Open Visual studio code and insert to the terminal:
-> sudo apt install git
+> sudo apt install git -y
 
 > git clone https://github.com/Dan-marinescu/bezeq.git
 
 And open the project in Visual Studio Code.
-> sudo apt install nodejs npm -y
 
-> npm i express
-
-> sudo apt install build-essential mongodb -y
+Insert to the terminal:
+> sudo apt install npm build-essential mongodb curl  -y
 
 To verify that mongodb was installed properly look for "active(running) in the output of:
 
 > sudo systemctl status mongodb
 
-> Active: active (running)
-
-> sudo apt install curl 
+**Active: active (running)**
 
 > curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
-> sudo apt install nodejs
+> sudo apt install nodejs -y
+
+> npm i express
 
 Verify NodeJS and NPM are installed properly.
 
 > node -v && npm -v
-> v12.x.x
-> 6.x.x
 
-> npm i mongoose
+ **v12.x.x**
+ 
+ **6.x.x**
 
 # Starting the app
 Type in the terminal:
