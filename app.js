@@ -6,6 +6,7 @@ const bcrypt = require('bcrypt');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const PORT = process.env.PORT || 3003;
+const CONNECTION_URL = process.env.CONNECTION_URL || 'mongodb://localhost:27017/usersDB';
 global.TextEncoder = require("util").TextEncoder;
 app.set('view engine', 'ejs');
 app.set('views', 'views');
@@ -101,7 +102,7 @@ app.get('*', (req, res) => {
 })
 
 //connect to the database
-mongoose.connect('mongodb://localhost:27017/usersDB', {
+mongoose.connect(CONNECTION_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
