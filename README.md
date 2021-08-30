@@ -2,9 +2,16 @@
 Website with login and signup pages that allow access to a secret page only to authenticated users.
 
 # Languages and technologies 
-HTML5, CSS, JavaScript, NodeJS, Express, Mongo, Mongoose. 
+* HTML5
+*  CSS
+*  JavaScript
+*  NodeJS
+*  Express
+*  Mongo
+*  Mongoose
+*  Cookies
 
-# Installation
+## Installation
 Created on linux (Ubuntu 20.04) platform, Visual Studio Code.
 
 Open Visual studio code and insert to the terminal:
@@ -37,7 +44,7 @@ Verify NodeJS and NPM are installed properly.
  
  **6.x.x**
 
-# Starting the app
+## Starting the app
 Type in the terminal:
 > node app.js
 
