@@ -49,3 +49,5 @@ Type in the terminal:
 > node app.js
 
 And click the link to the localhost.
+
+https://bezeq-hw.herokuapp.com/
