@@ -47,7 +47,7 @@ app.post('/signup', async (req, res) => {
     const user = new User({ username, password: hashedPassword })
     await user.save();
     req.session.user_id = user._id;
-    res.cookie('username', username, { expires: new Date(Date.now() + (1 * 60 * 1000)), httpOnly: true })
+    res.cookie('username', username, { expires: new Date(Date.now() + (30 * 60 * 1000)), httpOnly: true })
     return res.redirect('/secret');
 })
 
