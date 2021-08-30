@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
-const PORT = 3003;
+const PORT = process.env.PORT || 3003;
 global.TextEncoder = require("util").TextEncoder;
 app.set('view engine', 'ejs');
 app.set('views', 'views');
